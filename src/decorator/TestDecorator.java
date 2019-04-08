@@ -11,7 +11,7 @@ public class TestDecorator {
         Component windowWithBorder = new BorderDecorator(new Window());
         windowWithBorder.draw();
 
-        Component textViewWithColor = new ColorDecorator(new TextView());
-        textViewWithColor.draw();
+        Component textViewWithColorAndBorder = new ColorDecorator(new BorderDecorator(new TextView()));
+        textViewWithColorAndBorder.draw();
     }
 }
