@@ -1,0 +1,11 @@
+package bridge;
+
+public abstract class Car {
+    Brand brand;
+
+    public Car(Brand brand) {
+        this.brand = brand;
+    }
+
+    abstract void showDetails();
+}
